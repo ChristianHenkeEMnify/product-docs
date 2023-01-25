@@ -84,7 +84,7 @@ const config = {
           index: true,
         },
         loaders: {
-          GraphQLFileLoader: "@graphql-tools/graphql-file-loader" // local file schema
+          GraphQLFileLoader: "@graphql-tools/graphql-file-loader", // local file schema
         },
       },
     ],
@@ -134,6 +134,11 @@ const config = {
             position: "left",
             sidebarId: "restSidebar",
             label: "REST API",
+          },
+          {
+            to: "/product-docs/graphql",
+            label: "GraphQL API",
+            position: "right",
           },
         ],
       },
