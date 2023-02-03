@@ -72,6 +72,7 @@ const config = {
   ],
 
   plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
     [
       "@graphql-markdown/docusaurus",
       {
@@ -131,14 +132,15 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            position: "left",
             sidebarId: "restSidebar",
             label: "REST API",
+            position: "left",
           },
           {
-            to: "/product-docs/graphql",
+            type: "docSidebar",
+            sidebarId: "schemaSidebar",
             label: "GraphQL API",
-            position: "right",
+            position: "left",
           },
         ],
       },
@@ -230,8 +232,6 @@ const config = {
         },
       },
     }),
-
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
 };
 
 module.exports = config;
