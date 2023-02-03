@@ -80,7 +80,6 @@ const config = {
         rootPath: "./docs", // docs will be generated under './docs' (rootPath/baseURL)
         baseURL: "graphql",
         linkRoot: "/",
-        homepage: "static/graphql-index.md",
         docOptions: {
           index: true,
         },
