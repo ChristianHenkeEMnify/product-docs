@@ -1,4 +1,5 @@
 // @ts-check
+const graphqlMarkdownConfig = require("./graphql-markdown.config");
 const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -73,21 +74,7 @@ const config = {
 
   plugins: [
     require.resolve("docusaurus-plugin-image-zoom"),
-    [
-      "@graphql-markdown/docusaurus",
-      {
-        schema: "./graphql/schema.graphql",
-        rootPath: "./docs", // docs will be generated under './docs' (rootPath/baseURL)
-        baseURL: "graphql",
-        linkRoot: "/",
-        docOptions: {
-          index: true,
-        },
-        loaders: {
-          GraphQLFileLoader: "@graphql-tools/graphql-file-loader", // local file schema
-        },
-      },
-    ],
+    ["@graphql-markdown/docusaurus", graphqlMarkdownConfig],
   ],
 
   themeConfig:
