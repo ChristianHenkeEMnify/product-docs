@@ -1,9 +1,12 @@
 ---
 description: Network aggregation supporting all radio types
 ---
-# Global IoT Network
+# IoT SuperNetwork 
 
-Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
+Due to their localized nature - traditional operator networks are not optimal for selling IoT devices in multiple markets. When working with operator SIM cards, IoT providers are forced to offer different products for different markets due to the lack of network coverage, high latency home routing, regulatory limitations for permanent roaming, lack of access to more networks in a country, lack of control and transparency on what is going on with the device and data.  
+
+The emnify IoT SuperNetwork is independent of any operator and is using a cloud-based communcication platform so devices can get access to any mobile network, without the use of home routing, with permanent roaming allowance in more than 100+ countries - and everything controlled through a sinle Portal and API.  
+
 
 <!-- TODO: Find place for service_stack.png -->
 
